@@ -1,0 +1,172 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Joker_R",
+      "points": [
+        [
+          362.90625,
+          663.28125
+        ],
+        [
+          406.65625,
+          864.84375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "Joker_B",
+      "points": [
+        [
+          437.90625,
+          655.46875
+        ],
+        [
+          472.28125,
+          863.28125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "2",
+      "points": [
+        [
+          514.46875,
+          663.28125
+        ],
+        [
+          566.03125,
+          721.09375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "10",
+      "points": [
+        [
+          581.65625,
+          647.65625
+        ],
+        [
+          633.21875,
+          721.09375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "7",
+      "points": [
+        [
+          650.40625,
+          655.46875
+        ],
+        [
+          712.90625,
+          722.65625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "7",
+      "points": [
+        [
+          733.21875,
+          655.46875
+        ],
+        [
+          776.96875,
+          725.78125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "7",
+      "points": [
+        [
+          797.28125,
+          653.90625
+        ],
+        [
+          856.65625,
+          725.78125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "5",
+      "points": [
+        [
+          876.96875,
+          658.59375
+        ],
+        [
+          930.09375,
+          724.21875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "5",
+      "points": [
+        [
+          948.84375,
+          652.34375
+        ],
+        [
+          1008.21875,
+          717.96875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\images\\database\\微信图片_20260425110843_203_16.png",
+  "imageData": null,
+  "imageHeight": 950,
+  "imageWidth": 1468
+}

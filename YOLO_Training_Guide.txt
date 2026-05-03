@@ -1,0 +1,167 @@
+# 斗地主扑克牌识别模型训练 - 完整指南
+
+## 任务目标
+训练一个 YOLOv8 物体检测模型，能够识别斗地主游戏中的 54张扑克牌。
+
+---
+
+## 项目结构
+
+C:\Users\30330\Desktop\doudizhu_strategy\
+├── main.py
+├── config.yaml
+├── modules\
+│   └── card_recognizer.py
+├── models\
+│   ├── yolov8_cards.pt              <- 需要替换为训练好的模型
+│   └── doudizhu_yolo\
+│       ├── training\
+│       │   ├── train_yolo.py
+│       │   └── doudizhu_cards.yaml
+│       └── data_collection\
+│           └── capture_cards.py
+├── templates\
+└── requirements.txt
+
+---
+
+## 扑克牌类别（共54类）
+
+必须严格按照以下格式标注，类别名必须与程序中的命名一致：
+
+3♠, 3♥, 3♦, 3♣,
+4♠, 4♥, 4♦, 4♣,
+5♠, 5♥, 5♦, 5♣,
+6♠, 6♥, 6♦, 6♣,
+7♠, 7♥, 7♦, 7♣,
+8♠, 8♥, 8♦, 8♣,
+9♠, 9♥, 9♦, 9♣,
+10♠, 10♥, 10♦, 10♣,
+J♠, J♥, J♦, J♣,
+Q♠, Q♥, Q♦, Q♣,
+K♠, K♥, K♦, K♣,
+A♠, A♥, A♦, A♣,
+2♠, 2♥, 2♦, 2♣,
+Joker_B,   # 小王（黑桃王）
+Joker_R    # 大王（红桃王）
+
+---
+
+## 训练步骤
+
+### Step 1: 检查现有代码
+请先阅读以下文件：
+- models/doudizhu_yolo/training/train_yolo.py - 训练脚本
+- models/doudizhu_yolo/training/doudizhu_cards.yaml - 数据集配置
+- modules/card_recognizer.py - 了解模型如何被调用
+
+### Step 2: 数据采集
+1. 运行 capture_cards.py 截取斗地主游戏中的扑克牌
+2. 重要：采集每个牌种在不同角度、不同背景下的图片
+3. 每个类别至少需要 15-20张 图片
+4. 图片要多样化：不同位置、不同光照、不同大小
+
+### Step 3: 数据标注（关键！）
+使用 LabelImg 或 LabelStudio 标注：
+
+标注格式：YOLO格式（归一化的中心点+宽高）
+- 每个 .jpg 图片对应一个 .txt 标签文件
+- 标签文件内容格式：类别ID x_center y_center width height
+- 所有值都是 0.0-1.0 的相对坐标
+
+类别ID对照（0-53，共54类）：
+0=3♠, 1=3♥, 2=3♦, 3=3♣,
+4=4♠, 5=4♥, 6=4♦, 7=4♣,
+...
+50=Joker_B, 51=Joker_R, 52=Joker_B, 53=Joker_R
+
+标注示例：
+# 假设一张图片中有3♠、4♥、5♦三张牌
+0 0.15 0.5 0.08 0.15   # 3♠ (类别0)
+1 0.35 0.5 0.08 0.15   # 4♥ (类别1)
+2 0.55 0.5 0.08 0.15   # 5♦ (类别2)
+
+### Step 4: 整理数据集
+确保目录结构如下：
+datasets/doudizhu_cards/
+├── train/
+│   ├── images/    # 训练图片 (*.jpg)
+│   └── labels/    # 训练标签 (*.txt)
+└── val/
+    ├── images/    # 验证图片
+    └── labels/    # 验证标签
+
+### Step 5: 修改配置文件
+doudizhu_cards.yaml 内容：
+path: datasets/doudizhu_cards
+train: train/images
+val: val/images
+nc: 54  # 类别数量必须是54！
+
+names:
+  0: 3♠
+  1: 3♥
+  2: 3♦
+  3: 3♣
+  4: 4♠
+  ...（依次类推，共54个）
+  50: Joker_B
+  51: Joker_R
+  52: Joker_B
+  53: Joker_R
+
+### Step 6: 开始训练
+cd C:\Users\30330\Desktop\doudizhu_strategy
+python models/doudizhu_yolo\training\train_yolo.py
+
+或使用 ultralytics 直接训练：
+from ultralytics import YOLO
+
+model = YOLO('yolov8n.pt')
+model.train(
+    data='models/doudizhu_yolo/training/doudizhu_cards.yaml',
+    epochs=100,        # 建议100-200
+    imgsz=640,         # 图片大小
+    batch=16,          # 有GPU用16，CPU用4
+    patience=20,       # 早停
+    save=True,         # 保存模型
+    plots=True         # 生成训练曲线
+)
+
+### Step 7: 获取训练结果
+训练完成后：
+runs/detect/train/weights/best.pt   # 最佳权重（用这个！）
+runs/detect/train/weights/last.pt   # 最后一个权重
+
+### Step 8: 部署
+把训练好的模型复制到项目根目录：
+copy runs\detect\train\weights\best.pt C:\Users\30330\Desktop\doudizhu_strategy\models\yolov8_cards.pt
+
+### Step 9: 验证
+from ultralytics import YOLO
+
+model = YOLO('models/yolov8_cards.pt')
+results = model('你的测试图片.jpg')
+results[0].show()  # 显示检测结果
+
+---
+
+## 注意事项
+
+1. 类别数量：必须是54类，名称必须与上面完全一致
+2. 标注质量：直接影响识别准确率，要仔细标注
+3. 数据多样性：采集不同条件下的图片
+4. 训练参数：
+   - epochs: 100-200
+   - batch_size: GPU用16-32，CPU用2-4
+   - imgsz: 640
+5. 验证集：保留10-20%的图片用于验证，不要全部用于训练
+
+---
+
+## 遇到问题？
+请告诉我：
+1. 具体的错误信息
+2. 是哪一步出现问题
+3. 电脑配置（有无GPU、显存大小）
+4. 已采集的图片数量

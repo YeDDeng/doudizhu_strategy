@@ -1,0 +1,316 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "10",
+      "points": [
+        [
+          262.5555555555556,
+          672.3333333333334
+        ],
+        [
+          324.4603174603175,
+          750.1111111111112
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "10",
+      "points": [
+        [
+          335.5714285714286,
+          672.3333333333334
+        ],
+        [
+          400.6507936507937,
+          746.936507936508
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "10",
+      "points": [
+        [
+          408.5873015873016,
+          670.7460317460318
+        ],
+        [
+          476.84126984126993,
+          748.5238095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "8",
+      "points": [
+        [
+          497.47619047619054,
+          672.3333333333334
+        ],
+        [
+          543.5079365079366,
+          746.936507936508
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "6",
+      "points": [
+        [
+          568.9047619047619,
+          669.1587301587302
+        ],
+        [
+          622.8730158730159,
+          750.1111111111112
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "5",
+      "points": [
+        [
+          638.7460317460318,
+          672.3333333333334
+        ],
+        [
+          702.2380952380952,
+          746.936507936508
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "4",
+      "points": [
+        [
+          711.7619047619048,
+          670.7460317460318
+        ],
+        [
+          778.4285714285716,
+          751.6984126984128
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "4",
+      "points": [
+        [
+          797.4761904761906,
+          672.3333333333334
+        ],
+        [
+          840.3333333333335,
+          740.5873015873016
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "4",
+      "points": [
+        [
+          864.1428571428571,
+          670.7460317460318
+        ],
+        [
+          914.936507936508,
+          745.3492063492064
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "4",
+      "points": [
+        [
+          941.9206349206349,
+          675.5079365079365
+        ],
+        [
+          995.8888888888889,
+          748.5238095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "3",
+      "points": [
+        [
+          1008.5873015873017,
+          672.3333333333334
+        ],
+        [
+          1076.8412698412699,
+          746.936507936508
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "3",
+      "points": [
+        [
+          1094.3015873015872,
+          677.0952380952382
+        ],
+        [
+          1141.920634920635,
+          743.7619047619048
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "A",
+      "points": [
+        [
+          253.03174603174608,
+          327.88888888888886
+        ],
+        [
+          291.12698412698415,
+          378.68253968253964
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "K",
+      "points": [
+        [
+          1030.8095238095239,
+          319.9523809523809
+        ],
+        [
+          1075.2539682539682,
+          377.0952380952381
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "K",
+      "points": [
+        [
+          1076.8412698412699,
+          324.7142857142857
+        ],
+        [
+          1119.6984126984128,
+          378.68253968253964
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "K",
+      "points": [
+        [
+          1122.873015873016,
+          323.1269841269841
+        ],
+        [
+          1167.3174603174602,
+          381.85714285714283
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "K",
+      "points": [
+        [
+          1172.079365079365,
+          324.7142857142857
+        ],
+        [
+          1219.6984126984128,
+          380.26984126984127
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\images\\database\\微信图片_20260425110510_198_16.png",
+  "imageData": null,
+  "imageHeight": 978,
+  "imageWidth": 1514
+}

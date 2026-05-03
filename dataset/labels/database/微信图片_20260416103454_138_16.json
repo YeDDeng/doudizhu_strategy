@@ -1,0 +1,28 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "4",
+      "points": [
+        [
+          241.81818181818187,
+          306.1515151515151
+        ],
+        [
+          287.2727272727273,
+          363.7272727272727
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\images\\database\\微信图片_20260416103454_138_16.png",
+  "imageData": null,
+  "imageHeight": 932,
+  "imageWidth": 1470
+}

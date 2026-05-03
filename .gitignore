@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Models (太大，不上传)
+models/*.pt
+douzero_models/*.ckpt
+
+# Training outputs
+runs/
+*.log
+
+# Debug images
+debug_*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Stdout/stderr
+stdout.txt
+stderr.txt
+
+# Learning state (运行时生成)
+learning_state.json
+doudizhu_log.txt
+
+# 操作日志 (可能包含敏感信息)
+操作日志.md

@@ -1,0 +1,118 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Joker_R",
+      "points": [
+        [
+          516.4166666666666,
+          583.0277777777777
+        ],
+        [
+          573.3611111111111,
+          785.8055555555555
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "Joker_B",
+      "points": [
+        [
+          584.4722222222223,
+          580.25
+        ],
+        [
+          627.5277777777778,
+          788.5833333333333
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "8",
+      "points": [
+        [
+          658.0833333333334,
+          587.1944444444445
+        ],
+        [
+          706.6944444444445,
+          653.8611111111111
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "8",
+      "points": [
+        [
+          724.75,
+          585.8055555555555
+        ],
+        [
+          776.1388888888889,
+          652.4722222222222
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "2",
+      "points": [
+        [
+          1033.0833333333335,
+          281.63888888888886
+        ],
+        [
+          1069.1944444444443,
+          333.0277777777777
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "2",
+      "points": [
+        [
+          1071.9722222222222,
+          280.24999999999994
+        ],
+        [
+          1110.8611111111113,
+          333.0277777777777
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\images\\database\\微信图片_20260410223156_5_5.png",
+  "imageData": null,
+  "imageHeight": 848,
+  "imageWidth": 1387
+}

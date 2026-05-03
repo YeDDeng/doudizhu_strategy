@@ -1,0 +1,118 @@
+{
+  "version": "6.1.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Q",
+      "points": [
+        [
+          688.952380952381,
+          502.4920634920635
+        ],
+        [
+          723.8730158730159,
+          559.6349206349207
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "Q",
+      "points": [
+        [
+          736.5714285714286,
+          500.90476190476187
+        ],
+        [
+          779.4285714285714,
+          559.6349206349207
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "9",
+      "points": [
+        [
+          557.2063492063492,
+          673.9206349206349
+        ],
+        [
+          614.3492063492064,
+          743.7619047619048
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "9",
+      "points": [
+        [
+          638.1587301587301,
+          677.0952380952382
+        ],
+        [
+          696.8888888888889,
+          748.5238095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "9",
+      "points": [
+        [
+          720.6984126984127,
+          680.2698412698413
+        ],
+        [
+          771.4920634920635,
+          742.1746031746032
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "9",
+      "points": [
+        [
+          792.1269841269841,
+          667.5714285714286
+        ],
+        [
+          834.984126984127,
+          748.5238095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\images\\database\\微信图片_20260425110057_191_16.png",
+  "imageData": null,
+  "imageHeight": 978,
+  "imageWidth": 1516
+}

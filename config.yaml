@@ -1,0 +1,21 @@
+game:
+  type: "欢乐斗地主"
+  window_title: ".*斗地主.*"
+
+recognition:
+  fps: 1
+  confidence_threshold: 0.25
+  model_path: "models/yolov8_cards_v5.pt"
+
+ai:
+  strategy: "balanced"  # aggressive/balanced/defensive
+  max_decision_time: 0.2
+
+ui:
+  opacity: 0.9
+  position: "top-right"
+  hotkey: "F1"
+
+logging:
+  level: "INFO"
+  save_history: true

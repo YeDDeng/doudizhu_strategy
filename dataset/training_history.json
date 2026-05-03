@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-04-25T23:18:01.104940",
+    "new_model": "yolov8_cards_v5.pt",
+    "base_model": "yolov8_cards.pt",
+    "epochs": 50,
+    "status": "failed",
+    "error": "Dataset 'C://Users/30330/Desktop/doudizhu_strategy/dataset/dataset_yolov8_cards_v5.pt.yaml' error  C:\\Users\\30330\\Desktop\\doudizhu_strategy\\dataset\\dataset_yolov8_cards_v5.pt.yaml 'val:' key missing .\n'train' and 'val' are required in all data YAMLs."
+  },
+  {
+    "timestamp": "2026-04-25T23:19:11.403515",
+    "new_model": "yolov8_cards_v5.pt",
+    "base_model": "yolov8_cards.pt",
+    "epochs": 50,
+    "status": "failed",
+    "error": "\u001b[34m\u001b[1mtrain: \u001b[0mError loading data from ['C:\\\\Users\\\\30330\\\\Desktop\\\\doudizhu_strategy\\\\dataset\\\\images\\\\train', 'C:\\\\Users\\\\30330\\\\Desktop\\\\doudizhu_strategy\\\\dataset\\\\images\\\\database', 'C:\\\\Users\\\\30330\\\\Desktop\\\\doudizhu_strategy\\\\dataset\\\\candidate\\\\images\\\\train']\nSee https://docs.ultralytics.com/datasets for dataset formatting guidance."
+  }
+]

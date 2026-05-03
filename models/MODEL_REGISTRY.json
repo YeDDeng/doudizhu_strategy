@@ -1,0 +1,71 @@
+{
+  "models": [
+    {
+      "name": "yolov8_cards.pt",
+      "version": "main",
+      "added_at": "2026-04-16",
+      "source": "runs/detect/train_cards_v6/weights/best.pt",
+      "size_mb": 23.4,
+      "trained_on": "原始训练数据",
+      "accuracy": "17/17 检测正确",
+      "notes": "早期模型，从train_cards_v6恢复"
+    },
+    {
+      "name": "yolov8_cards_v1.pt",
+      "version": "v1",
+      "added_at": "2026-04-28",
+      "source": "runs/detect/train_on_host/weights/best.pt",
+      "size_mb": 6.0,
+      "trained_on": "63张图片，YOLOv8s + 数据增强",
+      "accuracy": "召回率100%，精确率77.9%",
+      "notes": "在宿主机构建，误检较多但召回完整"
+    },
+    {
+      "name": "yolov8_cards_v5.pt",
+      "version": "v5",
+      "added_at": "2026-04-29",
+      "source": "runs/detect/train_cpu_v1/weights/best.pt",
+      "size_mb": 23.4,
+      "trained_on": "199张 (原始88 + 数据库111)",
+      "accuracy": "精确率97.5%，召回率100%",
+      "notes": "从v1继续训练，CPU训练30 epochs，mAP50从0.736提升到0.927"
+    },
+    {
+      "name": "yolov8_cards_v2.pt",
+      "version": "v2",
+      "added_at": "2026-04-25",
+      "source": "runs/evolve/cards_v2/weights/last.pt",
+      "size_mb": 5.9,
+      "trained_on": "63张有效标注",
+      "accuracy": "退化",
+      "notes": "迁移学习失败，未使用"
+    },
+    {
+      "name": "yolov8_cards_v3.pt",
+      "version": "v3",
+      "added_at": "2026-04-25",
+      "source": "runs\\detect\\runs\\evolve\\cards_v2\\weights\\best.pt",
+      "size_mb": 5.9,
+      "notes": "与v2相同版本，未使用"
+    },
+    {
+      "name": "yolov8_cards_v4.pt",
+      "version": "v4",
+      "added_at": "2026-04-25",
+      "source": "C:\\Users\\30330\\Desktop\\best.pt (宿主机训练)",
+      "size_mb": 6.0,
+      "trained_on": "63张图片，YOLOv8s + 数据增强",
+      "accuracy": "K:0.891, 2:0.551",
+      "notes": "来自宿主机，检测效果有提升"
+    },
+    {
+      "name": "yolov8_cards_backup.pt",
+      "version": "backup",
+      "added_at": "2026-04-25",
+      "source": "yolov8_cards.pt 替换前的备份",
+      "size_mb": 23.4,
+      "notes": "被v4替换前的旧活跃模型"
+    }
+  ],
+  "active_model": "yolov8_cards_v5.pt"
+}

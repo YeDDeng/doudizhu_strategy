@@ -1,0 +1,24 @@
+# Doudizhu Card Detection Training Config - NO HORIZONTAL FLIP
+path: C:/Users/30330/Desktop/doudizhu_strategy/dataset
+train: images/new
+val: images/new
+
+# Classes (15 card ranks)
+names:
+  0: 3
+  1: 4
+  2: 5
+  3: 6
+  4: 7
+  5: 8
+  6: 9
+  7: 10
+  8: J
+  9: Q
+  10: K
+  11: A
+  12: 2
+  13: Joker_B
+  14: Joker_R
+
+nc: 15
