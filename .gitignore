@@ -15,9 +15,12 @@ venv/
 *.swp
 *.swo
 
-# Models (太大，不上传)
-models/*.pt
-douzero_models/*.ckpt
+# Models - 只保留必要文件（旧版本模型不上传）
+models/yolov8_cards_backup.pt
+models/yolov8_cards_new.pt
+models/yolov8_cards_v2.pt
+models/yolov8_cards_v3.pt
+models/yolov8_cards_v4.pt
 
 # Training outputs
 runs/
